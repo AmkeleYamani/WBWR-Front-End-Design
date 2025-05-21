@@ -2,17 +2,25 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white py-8 px-4">
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
-        <div className="text-center md:text-left">
-          <h2 className="text-lg font-bold">WBWR</h2>
-          <p className="text-sm text-gray-400">© {new Date().getFullYear()} WBWR. All rights reserved.</p>
-        </div>
-        <div className="flex gap-4">
-          <a href="#" className="text-gray-400 hover:text-white text-sm">Privacy</a>
-          <a href="#" className="text-gray-400 hover:text-white text-sm">Terms</a>
-          <a href="#" className="text-gray-400 hover:text-white text-sm">Contact</a>
-        </div>
+    <footer className="w-full h-[400px] bg-[#111111] text-white px-6 py-12 flex flex-col items-center justify-center text-center">
+      {/* Logo / Title */}
+      <h2 className="text-2xl font-bold mb-2">WBWR</h2>
+
+      {/* Subtitle or Tagline */}
+      <p className="text-sm text-gray-400 mb-8">
+        Crafting world-class digital experiences.
+      </p>
+
+      {/* Links */}
+      <div className="flex gap-6 text-sm text-gray-400 mb-8">
+        <a href="#" className="hover:text-white transition">Privacy</a>
+        <a href="#" className="hover:text-white transition">Terms</a>
+        <a href="#" className="hover:text-white transition">Contact</a>
+      </div>
+
+      {/* Copyright */}
+      <div className="text-xs text-gray-500">
+        © {new Date().getFullYear()} WBWR. All rights reserved.
       </div>
     </footer>
   );
